@@ -1,0 +1,121 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #00000;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-black);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --c-primary: var(--vt-c-indigo);
+  --c-primary-light: var(--vt-c-indigo);
+  --c-primary-dark: var(--vt-c-indigo);
+
+  --c-secondary: var(--vt-c-indigo);
+  --c-secondary-light: var(--vt-c-indigo);
+  --c-secondary-dark: var(--vt-c-indigo);
+
+  --c-accent: var(--vt-c-indigo);
+  --c-accent-light: var(--vt-c-indigo);
+  --c-accent-dark: var(--vt-c-indigo);
+
+
+
+  /**
+  Custom
+  */
+
+  --color-background: #000000;
+  --color-background-light: #ffffff;
+
+  --color-topbar: #000000;
+  --color-topbar-title: var(#);
+
+  /* --section-gap: 160px; */
+
+  --color-primary: #ff9a02;
+  --color-primary-light: #ffba6c;
+  --color-primary-lighter: #ffdbc8;
+
+  --color-secondary: #00FF00;
+  --color-secondary-light: #c0ffc0;
+  --color-secondary-lighter: #d7ffd7;
+
+  --color-text-header: #ff628e;
+  --color-text-focus: #ffd8e3;
+  --color-text: #ffffff;
+  --color-text-dark:#7c7d7e;
+  --color-text-darkest: #000000;
+
+  --color-light: #ffffff;
+  --color-light-focus: #f1f1f1;
+  --color-medium: #d5d5d5;
+  --color-dark: #919191;
+  --color-dark-focus: #555555;
+
+  --color-overlay-transparent: rgba(0, 0, 0, 0);
+  --color-overlay: #00000090;
+}
+
+/* TODO - styling: Dark mode impl */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+/* TODO - styling: change body defaults */
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  /* background: var(--color-background); */
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Bettina Signature';
+  src: url('../../public/fonts/bettina_signature_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Beon';
+  src: url('/fonts/beon_medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
